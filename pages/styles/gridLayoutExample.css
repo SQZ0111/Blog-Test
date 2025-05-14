@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.app-body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "navbar navbar"
+                         "main sidebar"
+                         "footer footer";
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+}
+
+.navbar {
+    background-color: aqua;
+    grid-area: navbar;
+}
+
+.main-content {
+    background-color: red;
+    grid-area: main;
+    display: grid;
+    grid-template-areas: "img text"
+                         "img secondary";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+/* img place */
+/* .placeholder-img {
+    background-color: rgb(45, 98, 98);
+    height: 100%;
+    width: 100%;
+    grid-area: img;
+}
+
+.first {
+    background-color: aliceblue;
+    grid-area: text;
+}
+
+.second {
+    background-color: aquamarine;
+    grid-area: secondary; */
+/* } */
+
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: yellow;
+    
+}
+
+.footer {
+    background-color: violet;
+    grid-area: footer;
+}
